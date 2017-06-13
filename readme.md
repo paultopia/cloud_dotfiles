@@ -92,6 +92,9 @@ boot
 
 `sudo apt-get install tmux`
 
+- tex (will take forever)
+
+` sudo apt-get install texlive-full`
 
 THEN CONFIG -- spacemacs, zsh (oh-my-zsh?), leiningen, python environment with condo?  boot cli version (starts out totally obsolete.)
 
