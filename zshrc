@@ -105,3 +105,6 @@ fi
 em() {
     emacsclient --alternate-editor="" -c $@
     }
+
+# get a personal executables path going
+PATH=$PATH:~/onpath
