@@ -1,4 +1,3 @@
-B
 Working on creating a reproducible cloud dev setup (e.g. from coding from an ipad over ssh)
 
 Current setup steps:
@@ -54,7 +53,7 @@ export NVM_DIR="$HOME/.nvm"
 nvm install node
 ```
 
--pandoc
+- pandoc
 
 `sudo apt-get install -y pandoc`
 
@@ -95,6 +94,22 @@ boot
 - tex (will take forever)
 
 ` sudo apt-get install texlive-full`
+
+- add a nice path location for local files (see .zshrc)
+
+` mkdir onpath`
+
+(At some point, I'm going to set up a personal API that can basically do a docverter for me and dump in dropbox or google drive or something.) (Which reminds me:) 
+
+- gdrive CLI (https://github.com/prasmussen/gdrive)
+
+```
+sudo curl -o ~/onpath/gdrive https://docs.google.com/uc?id=0B3X9GlR6EmbnQ0FtZmJJUXEyRTA&export=download
+sudo chmod +x ~/onpath/gdrive
+gdrive about
+```
+
+(then follow instructions)
 
 - Switch to zsh and install oh-my-zsh
 ```sudo chsh -s /bin/zsh
