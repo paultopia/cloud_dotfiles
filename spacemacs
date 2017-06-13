@@ -261,7 +261,7 @@ values."
    ;;                       text-mode
    ;;   :size-limit-kb 1000)
    ;; (default nil)
-   dotspacemacs-line-numbers nil
+   dotspacemacs-line-numbers t
    ;; Code folding method. Possible values are `evil' and `origami'.
    ;; (default 'evil)
    dotspacemacs-folding-method 'evil
@@ -278,7 +278,7 @@ values."
    dotspacemacs-highlight-delimiters 'all
    ;; If non nil, advise quit functions to keep server open when quitting.
    ;; (default nil)
-   dotspacemacs-persistent-server nil
+   dotspacemacs-persistent-server t
    ;; List of search tool executable names. Spacemacs uses the first installed
    ;; tool of the list. Supported tools are `ag', `pt', `ack' and `grep'.
    ;; (default '("ag" "pt" "ack" "grep"))
@@ -320,11 +320,14 @@ you should place your code here."
   (add-hook 'clojure-mode-hook #'evil-cleverparens-mode)
   (setq cider-show-error-buffer nil)
   (golden-ratio-mode 1)
+  (setq exec-path-from-shell-check-startup-files nil)
   (setq ring-bell-function 'ignore)
   (fset 'xterm-color-unfontify-region 'font-lock-default-unfontify-region)
   (with-eval-after-load 'clojure-mode
     (dolist (c (string-to-list ":_-?!#*"))
       (modify-syntax-entry c "w" clojure-mode-syntax-table )))
+  (evil-leader/set-key
+    "q q" 'spacemacs/frame-killer)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will

@@ -95,3 +95,13 @@ export PATH="/home/hackbox/anaconda3/bin:$PATH"
 # fire up autojump
 source /usr/share/autojump/autojump.sh
 
+# Make emacs run in the background
+
+emacsup=`pidof emacs`
+if [ ! $emacsup ]; then
+    emacs --daemon
+fi
+
+em() {
+    emacsclient --alternate-editor="" -c $@
+    }
