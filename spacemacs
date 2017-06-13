@@ -44,14 +44,12 @@ values."
      shell
      ess
      haskell
-     elm
      shell-scripts
      python
      evil-commentary
      vim-powerline
      html
      evil-cleverparens
-     spell-checking
      version-control
      )
    ;; List of additional packages that will be installed without being
@@ -315,7 +313,6 @@ explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
   (setq python-indent-offset 4)
   (spacemacs|disable-company markdown-mode)
-  (spacemacs|disable-company org-mode)
   (setq-default evil-escape-key-sequence "qq")
   (setq-default evil-escape-delay 0.2)
   (setq vc-follow-symlinks t)
@@ -323,7 +320,6 @@ you should place your code here."
   (add-hook 'clojure-mode-hook #'evil-cleverparens-mode)
   (setq cider-show-error-buffer nil)
   (golden-ratio-mode 1)
-  ;; (global-linum-mode)
   (setq ring-bell-function 'ignore)
   (fset 'xterm-color-unfontify-region 'font-lock-default-unfontify-region)
   (with-eval-after-load 'clojure-mode
