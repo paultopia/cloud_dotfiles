@@ -108,3 +108,9 @@ em() {
 
 # get a personal executables path going
 PATH=$PATH:~/onpath
+
+# go
+export PATH=$PATH:/usr/local/go/bin
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+

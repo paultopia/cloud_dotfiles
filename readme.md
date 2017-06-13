@@ -95,6 +95,15 @@ boot
 
 ` sudo apt-get install texlive-full`
 
+- go (mostly because some useful stuff requires it.)
+
+```
+curl -O https://storage.googleapis.com/golang/go1.8.3.linux-amd64.tar.gz 
+sudo tar -C /usr/local -xzf go1.8.3.linux-amd64.tar.gz
+```
+
+(make sure go is on the $PATH, see .zshrc in this repo.)
+
 - add a nice path location for local files (see .zshrc)
 
 ` mkdir onpath`
@@ -104,8 +113,7 @@ boot
 - gdrive CLI (https://github.com/prasmussen/gdrive)
 
 ```
-sudo curl -o ~/onpath/gdrive https://docs.google.com/uc?id=0B3X9GlR6EmbnQ0FtZmJJUXEyRTA&export=download
-sudo chmod +x ~/onpath/gdrive
+go get github.com/prasmussen/gdrive
 gdrive about
 ```
 
