@@ -96,8 +96,25 @@ boot
 
 ` sudo apt-get install texlive-full`
 
-THEN CONFIG -- spacemacs, zsh (oh-my-zsh?), leiningen, python environment with condo?  boot cli version (starts out totally obsolete.)
+- Switch to zsh and install oh-my-zsh
+```sudo chsh -s /bin/zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
 
-tmux config: https://www.digitalocean.com/community/tutorials/how-to-configure-tmux-on-a-cloud-server
+- planck, because you can never have too much clojure:
+
+```sudo add-apt-repository ppa:mfikes/planck
+sudo apt-get update
+sudo apt-get install planck
+```
+
+(Note: the theme in the .zshrc in this repo doesn't exist in the current distro. I can't remember where I found it.)
+
+needs config: 
+
+- tmux
+
+- boot
+
 
 mosh on iOS http://www.blink.sh/ 
