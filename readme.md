@@ -133,6 +133,10 @@ sudo apt-get install planck
 
 (Note: the theme in the .zshrc in this repo doesn't exist in the current distro. I can't remember where I found it.)
 
+- get tern to play with the spacemacs javascript layer 
+
+`npm install -g tern`
+
 needs config: 
 
 - tmux
