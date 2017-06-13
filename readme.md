@@ -66,6 +66,11 @@ bash ~/anaconda.sh
 
 and answer yes when asked to prepend to path
 
+- Switch to zsh and install oh-my-zsh
+```
+sudo chsh -s /bin/zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
 
 - autojump
 
@@ -119,11 +124,6 @@ gdrive about
 
 (then follow instructions)
 
-- Switch to zsh and install oh-my-zsh
-```sudo chsh -s /bin/zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-```
-
 - planck, because you can never have too much clojure:
 
 ```sudo add-apt-repository ppa:mfikes/planck
@@ -138,6 +138,5 @@ needs config:
 - tmux
 
 - boot
-
 
 mosh on iOS http://www.blink.sh/ 
