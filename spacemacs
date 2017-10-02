@@ -41,10 +41,8 @@ values."
      helm
      auto-completion
      emacs-lisp
-     markdown
      shell
      ess
-     haskell
      shell-scripts
      python
      evil-commentary
